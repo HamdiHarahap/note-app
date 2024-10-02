@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', system-ui;
+	background-color: #f2f9fe;
+	padding-bottom: 2rem;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 0;
+}
+
+.add-circle {
+	position: fixed;
+	display: flex;
+	top: 80%;
+	left: 92%;
+	border: 2px solid;
+	width: auto;
+	border-radius: 50%;
+	cursor: pointer;
+
+	a {
+		display: flex;
+	}
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+.add-img {
+	width: 50px;
+}
+
+.btn-container {
+	display: flex;
+}
+
+.notes-body {
+	padding: 0.5rem;
+}
+
+.notes-item {
+	height: 340px;
+	width: 273px;
+	border: 2px solid;
+	border-radius: 10px 10px 0 0;
+}
+
+.notes-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.notes-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+
+.notes-app {
+	padding: 0 11rem;
+}
+
+.card-item__title {
+	font-weight: 600;
+}
+
+.card-item__date {
+	color: #424242;
+	font-size: 12px;
+}
+
+.add-container {
+	margin: auto;
+	border: 2px solid;
+	padding: 1rem;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	margin-top: 2rem;
+
+	h2 {
+		margin-bottom: 1rem;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	textarea {
+		margin-bottom: 0.5rem;
+	}
+}
