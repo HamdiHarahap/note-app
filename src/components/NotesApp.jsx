@@ -72,19 +72,28 @@ class NotesApp extends React.Component {
 				<h1 style={{ margin: '1rem 0 1.5rem', fontWeight: '600' }}>
 					Active Notes
 				</h1>
-				<NotesList
-					notes={activeNotes}
-					onDelete={this.onDeleteHandler}
-					onArchive={this.onArchiveHandler}
-				/>
+				{activeNotes.length === 0 ? (
+					<h3 style={{ fontWeight: '600' }}>No active notes available.</h3>
+				) : (
+					<NotesList
+						notes={activeNotes}
+						onDelete={this.onDeleteHandler}
+						onArchive={this.onArchiveHandler}
+					/>
+				)}
+
 				<h1 style={{ margin: '2rem 0 1.5rem', fontWeight: '600' }}>
 					Archived Notes
 				</h1>
-				<NotesList
-					notes={archivedNotes}
-					onDelete={this.onDeleteHandler}
-					onArchive={this.onArchiveHandler}
-				/>
+				{archivedNotes.length === 0 ? (
+					<h3 style={{ fontWeight: '600' }}>No archived notes available.</h3>
+				) : (
+					<NotesList
+						notes={archivedNotes}
+						onDelete={this.onDeleteHandler}
+						onArchive={this.onArchiveHandler}
+					/>
+				)}
 			</div>
 		)
 	}
